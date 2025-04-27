@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Nas Shop</title>
+  <link rel="shortcut icon" href="Nas Shop/NASShop.png">
+
+</head>
+
+<body>
+  <main class="box">
+    <form>
+      <img class="mb-4" src="NASShop.png" alt="" width="72" height="57">
+      <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+
+      <div class="input">
+        <label for="floatingInput">Email address</label>
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      </div>
+      <div class="input">
+        <label for="floatingPassword">Password</label>
+        <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      </div>
+
+
+      <div class="form-check text-start my-3">
+        <label class="form-check-label" for="flexCheckDefault">
+          Remember me
+        </label>
+        <input class="check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+        <br>
+        <br>
+        <li class="user-icon">
+          <a href="#" onclick="showPopupMenu();"><i>ลืมรหัสผ่านหรอ!!!</i></a>
+          <ul class="popup-menu" id="popupMenu">
+            <li><a href="#"><label type="email">กรอก e-mall</a></li>
+            <li><a href="#">
+                <div class="input">
+
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  </div< /a>
+            </li>
+            <li><a href="#"><label type="password">กรอกเบอร์โทรศัพท์</a></li>
+            <li><a href="#"><input type="password" placeholder="หมายเลข . . ."></a></li>
+            <li><a href="#"><label type="otp">กรอกหมายเลข OTP </a></li>
+            <li><a href="#"><input type="otp" placeholder="OTP จะส่งในไม่ช้า"></a></li>
+          </ul>
+        </li>
+      </div>
+      <div class="sign-in">
+        <a href='หหหหหหห.html'><b class="btn btn-primary w-100 py-2" type="submit">Sign in</b></a>
+      </div>
+
+    </form>
+  </main>
+
+
+
+
+  <!-- ส่วนเนื้อหาของเว็บไซต์ -->
+
+  <br>
+  |
+  <style>
+    .box img {
+      border-radius: 50%;
+    }
+
+    b {
+
+      width: 9em;
+      background-color: #5a5a5a;
+      height: 3em;
+      margin: auto;
+      border-radius: 30em;
+      color: #f1f1f1;
+      font-size: 20px;
+      font-family: inherit;
+      border: none;
+      position: relative;
+      font-family: 'Poppins', sans-serif;
+
+      font-family: 'Prompt', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      z-index: 1;
+      margin-top: 100px;
+      text-decoration: none;
+      box-shadow: 0px 10px 14px 4px rgba(0, 0, 0, 0.36);
+
+    }
+
+    b::before {
+      content: '';
+      width: 0;
+      height: 3em;
+      margin: auto;
+      border-radius: 30em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(to right, rgb(50, 51, 51) 0%, rgb(62, 66, 66) 100%);
+      transition: .3s ease;
+      display: block;
+      z-index: -1;
+    }
+
+    b:hover::before {
+      width: 12rem;
+      margin: auto;
+    }
+
+    .sing-in a {
+
+      width: 9em;
+      background-color: #5a5a5a;
+      height: 3em;
+      margin: auto;
+      border-radius: 30em;
+      color: #f1f1f1;
+      font-size: 20px;
+      font-family: inherit;
+      border: none;
+      position: relative;
+      font-family: 'Poppins', sans-serif;
+
+      font-family: 'Prompt', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      z-index: 1;
+      margin-top: 150px;
+      box-shadow: 0px 10px 14px 4px rgba(0, 0, 0, 0.36);
+
+    }
+
+    .sing-in a::before {
+      content: '';
+      width: 0;
+      height: 3em;
+      margin: auto;
+      border-radius: 30em;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: linear-gradient(to right, rgb(50, 51, 51) 0%, rgb(62, 66, 66) 100%);
+      transition: .3s ease;
+      display: block;
+      z-index: -1;
+    }
+
+    .sing-in a:hover::before {
+      width: 12rem;
+      margin: auto;
+    }
+
+    .check-input {
+      margin-right: px;
+    }
+
+    .user-icon {
+      position: relative;
+    }
+
+    .popup-menu {
+
+      background: #fff;
+      width: 315px;
+      border-radius: 10px;
+      padding: 1rem;
+      position: absolute;
+      left: -18px;
+      list-style: none;
+      transform: translateY(-350px);
+      box-shadow: 2px 2px 8px 4px rgba(0, 0, 0, 0.3);
+      display: none;
+
+
+    }
+
+    .popup-menu li {
+      padding: .5rem 0;
+
+    }
+
+    .popup-menu li a {
+      text-decoration: none;
+      color: #333;
+
+    }
+
+    li {
+      list-style: none;
+    }
+
+    i {
+      margin-right: 50%;
+      color: rgb(180, 212, 248);
+    }
+
+    .pa input {
+      width: 100px;
+
+    }
+
+    .pa label {
+      margin-left: 5px;
+    }
+
+    footer a {
+      color: #407979;
+      margin-right: 125px;
+
+
+    }
+
+
+    .box {
+
+      color: rgb(255, 255, 255);
+      border-radius: 25px;
+      width: 400px;
+      height: 375px;
+      margin: auto;
+      font-family: 'Prompt', sans-serif;
+      padding: 50px;
+      text-align: center;
+      position: sticky;
+      top: 50px;
+      box-shadow: 0px 10px 14px 4px rgba(0, 0, 0, 0.36);
+      box-sizing: border-box;
+    }
+
+
+
+    * {
+      margin: 0;
+      padding: 0;
+
+
+    }
+
+    input {
+      width: 100px;
+      height: 18px;
+      opacity: 0.4;
+      border-radius: 2px;
+      padding: 5px 5px;
+      border: none;
+      margin: 0 auto;
+      outline: none;
+      margin-top: 15px;
+      transition: .5s;
+
+
+
+    }
+
+    input:hover {
+      transition: .5s;
+      width: 150px;
+      height: 18px;
+      box-shadow: 2px 10px 8px 4px rgba(0, 0, 0, 0.5);
+
+    }
+
+    li a input {
+      background-color: #6e6e6e;
+      color: #f1f1f1;
+      width: 150px;
+      height: 40px;
+      opacity: 0.4;
+      border-radius: 2px;
+      padding: 0 5px;
+      border: none;
+      margin: auto;
+      outline: none;
+      transition: .5s;
+    }
+
+    li a input:focus {
+      background-color: #333;
+      width: 250px;
+      transition: .5s;
+      box-shadow: 2px 10px 8px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      font-family: 'Prompt', sans-serif;
+    }
+  </style>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;200&display=swap');
+  </style>
+  <br>
+  <!-- background -->
+  <style>
+    body {
+      background: linear-gradient(-45deg, #d7d9da, #6e6e6e, #313131, #919292);
+      background-size: 400% 400%;
+      animation: gradient 15s ease infinite;
+      height: 100vh;
+    }
+
+    @keyframes gradient {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+  </style>
+
+
+  <script src="Nas Shop/script.js"></script>
+</body>
+
+</html>
